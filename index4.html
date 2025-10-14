@@ -1,0 +1,80 @@
+<!-- 
+  YAPILACAKLAR: Motivasyon poster web sitesi oluşturun.
+İstediğiniz gibi stil verin. 
+İlham almak için hedef görseline bakın.
+Ancak şu özelliklere sahip olmalıdır:
+1. Ana h1 metni, Google Fonts'tan Regular Libre Baskerville Font'unu kullanmalıdır:
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. Metin beyaz ve arka plan siyah olmalıdır.
+3. Kendi resminizi "assets" klasörü altındaki "images" klasörüne ekleyin. Resim 5px beyaz bir kenarlığa sahip olmalıdır.
+4. Metin ortalanmış olmalıdır.
+5. h1, p ve img elementlerini içeren bir div oluşturun. Görseli ve metni sayfada ortalayacak şekilde marjinleri ayarlayın. 
+  İpucu: Bir div'i yatay olarak ortalamak için genişliğini %50 yapın ve margin-left değerini %25 olarak ayarlayın.
+  İpucu: Görseli div'e sığdırmak için genişliğini %100 yapın.
+6. h1 başlığını CSS ile büyük harf yapmak için MDN belgelerinde text-transform özelliği hakkında bilgi edinin.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #000;     
+  color: #fff;         
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster {
+  width: 50%;            
+  max-width: 800px;       
+  text-align: center;      
+}
+
+.poster-img {
+  display: block;
+  width: 100%;  
+  height: auto;
+  border: 5px solid #fff; 
+  margin: 0 auto 20px;
+}
+
+.poster-title {
+  font-size: 3rem;         
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.poster-sub {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Motivation Meme</title>
+  <link rel="stylesheet" href="style4.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="poster">
+    <img class="motivation-img" src="./assets/images/daenerys.jpeg" src="daenerys with egg" />
+    <h1>O Özel An</h1>
+    <p>Süpermarkette mükemmel avokadoyu bulduğunuzda</p>
+        
+    </body>
+  </div>
+  
