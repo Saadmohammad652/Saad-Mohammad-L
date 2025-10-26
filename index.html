@@ -1,74 +1,78 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Saad Mohammad</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      .flag {
+        width: 350px;
+        height: 200px;
+        position: relative;
+        border: 1px solid #000;
+      }
+      .top {
+        background: black;
+        height: 33%;
+      }
+      .middle {
+        background: white;
+        height: 33%;
+      }
+      .bottom {
+        background: #007a3d;
+        height: 34%;
+      }
+
+      .triangle {
+        width: 0;
+        height: 0;
+        border-top: 100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-right: 145px solid #ce1126;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 205px;
+      }
+
+      .star {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        top: 80px;
+        left: 80px;
+        margin-left: 205px;
+      }
+    </style>
   </head>
   <body>
-    <div class="resume">
-      <!-- Profil Bölümü -->
-      <div class="profile">
-        <div class="contact-info">
-          <h1>Saad Mohammad</h1>
-          <p><b>Email:juniorxx478@gamil.com</b> adiniz@mail.com</p>
-          <p><b>Telefon:</b> +90 5382447299</p>
-          <p><b>Adres:</b> Konya , Türkiye</p>
-        </div>
+    <div class="flag">
+      <div class="top"></div>
+      <div class="middle"></div>
+      <div class="bottom"></div>
+      <div class="triangle"></div>
+      <div class="star">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            fill="white"
+            points="
+    50,5
+    58,30
+    85,30
+    62,47
+    70,75
+    50,58
+    30,75
+    38,47
+    15,30
+    42,30
+  "
+          />
+        </svg>
       </div>
-
-      <!-- Özet -->
-      <section>
-        <h2>Özet / Amaç</h2>
-        <p>
-          Web geliştirme alanında kendini geliştirmeyi hedefleyen, öğrenmeye
-          açık ve motivasyonu yüksek bir öğrenciyim.
-        </p>
-      </section>
-
-      <!-- Eğitim -->
-      <section>
-        <h2>Eğitim</h2>
-        <ul>
-          <li>
-            <b>KTO karatay Üniversitesi</b> – KTO karatay Üniversitesi (2022 -
-            Günümüz)
-          </li>
-          <li>
-            <b>Lise Diploması</b> – AL Husayin Bin Talal Lisesi (2019 - 2022)
-          </li>
-        </ul>
-      </section>
-
-      <!-- İş Deneyimi -->
-      <section>
-        <h2>İş Deneyimi</h2>
-        <ul>
-          <li>
-            <b>Stajyer - Yazılım Şirketi (2023)</b><br />
-            Görevler: Web sayfaları geliştirme, kod testleri yapma.
-          </li>
-        </ul>
-      </section>
-
-      <!-- Beceriler -->
-      <section>
-        <h2>Beceriler</h2>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Takım Çalışması & İletişim</li>
-          <li>Problem Çözme</li>
-        </ul>
-      </section>
-
-      <!-- Ödüller ve Sertifikalar -->
-      <section>
-        <h2>Ödüller & Sertifikalar</h2>
-        <ul>
-          <li>Web Temelleri Sertifikası</li>
-          <li>Lise Mezuniyet Projesi Ödülü</li>
-        </ul>
-      </section>
     </div>
   </body>
 </html>
